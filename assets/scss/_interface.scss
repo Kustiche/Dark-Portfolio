@@ -5,3 +5,135 @@
 .wrap {
 	padding: 35px 40px;
 }
+
+.sidebar {
+	position: absolute;
+	left: -305px;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 12px;
+	padding: 35px 30px;
+	width: 100%;
+	min-height: 650px;
+	max-width: 300px;
+	background-color: var(--mirage-color);
+
+	&__inner {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 20px;
+		padding: 5px;
+		width: 100%;
+		max-width: 65px;
+		background-color: var(--vul-color);
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			background-color: var(--electric-violet-color);
+			transform: translate(-25%, 25%);
+			transition: all 0.4s;
+		}
+
+		&--light {
+			&::after {
+				left: 0;
+				transform: translate(25%, 25%);
+			}
+		}
+	}
+
+	&__switch {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 185px;
+
+		&:hover .sidebar__inner {
+			&::after {
+				right: 100%;
+				transform: translate(125%, 25%);
+			}
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: normal;
+
+		&--active {
+			color: rgb(198 199 201 / 50%);
+		}
+	}
+
+	&__sun {
+		width: 20px;
+		height: 20px;
+		fill: var(--silver-sand-color);
+	}
+
+	&__moon {
+		width: 20px;
+		height: 20px;
+		fill: var(--silver-sand-color);
+	}
+}
+
+.nav {
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	&__item {
+		margin-bottom: 30px;
+		font-family: OpenSans-SemiBold, sans-serif;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: normal;
+		color: var(--silver-sand-color);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__icon {
+		margin-right: 20px;
+		width: 20px;
+		height: 20px;
+		fill: var(--silver-sand-color);
+		transition: fill 0.4s;
+	}
+
+	&__text {
+		transition: color 0.4s;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		&:hover .menu__icon {
+			fill: var(--electric-violet-color);
+		}
+
+		&:hover .menu__text {
+			color: var(--electric-violet-color);
+		}
+	}
+}

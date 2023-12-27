@@ -1,6 +1,10 @@
 .hero {
 	padding-top: 20px;
 
+	&__container {
+		position: relative;
+	}
+
 	&__wrap {
 		display: flex;
 		flex-direction: column;
