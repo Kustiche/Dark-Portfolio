@@ -5,14 +5,6 @@
 		position: relative;
 	}
 
-	&__wrap {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		border-radius: 12px;
-		background-color: var(--mirage-color);
-	}
-
 	&__messengers {
 		display: flex;
 		align-items: center;
