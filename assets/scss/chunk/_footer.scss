@@ -1,0 +1,38 @@
+.footer {
+	padding-bottom: 20px;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 450px;
+	}
+
+	&__contact {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 75px;
+		height: 75px;
+		background-color: rgb(44 49 79 / 40%);
+		transition: background-color 0.4s;
+
+		&:hover {
+			background-color: rgb(44 49 79 / 100%);
+		}
+	}
+
+	&__icon {
+		width: 30px;
+		height: 30px;
+		fill: var(--silver-sand-color);
+		stroke: var(--silver-sand-color);
+	}
+}
