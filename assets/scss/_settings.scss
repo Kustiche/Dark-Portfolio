@@ -76,3 +76,11 @@ img {
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
 }
+
+div {
+	transition: all 0.4s;
+}
+
+p {
+	transition: all 0.4s;
+}

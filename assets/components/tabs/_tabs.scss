@@ -19,12 +19,14 @@
 			font-weight: 600;
 			font-size: 15px;
 			line-height: normal;
+			color: rgb(198 199 201 / 50%);
 			background-color: var(--martinique-color);
 			transition: all 0.4s;
 			cursor: pointer;
 
 			&:hover {
 				box-shadow: 0 0 25px 0 rgb(133 65 250 / 25%);
+				color: var(--athens-gray-color);
 				background: var(--electric-violet-color);
 			}
 
@@ -42,6 +44,7 @@
 
 			&.active {
 				box-shadow: 0 0 25px 0 rgb(133 65 250 / 25%);
+				color: var(--athens-gray-color);
 				background: var(--electric-violet-color);
 			}
 		}

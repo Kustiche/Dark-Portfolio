@@ -21,11 +21,12 @@
 		border-radius: 50%;
 		width: 75px;
 		height: 75px;
-		background-color: rgb(44 49 79 / 40%);
-		transition: background-color 0.4s;
+		background-color: var(--martinique-color);
+		opacity: 0.4;
+		transition: opacity 0.4s;
 
 		&:hover {
-			background-color: rgb(44 49 79 / 100%);
+			opacity: 1;
 		}
 	}
 

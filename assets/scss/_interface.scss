@@ -54,13 +54,6 @@
 			transform: translate(-25%, 25%);
 			transition: all 0.4s;
 		}
-
-		&--light {
-			&::after {
-				left: 0;
-				transform: translate(25%, 25%);
-			}
-		}
 	}
 
 	&__switch {
@@ -83,7 +76,7 @@
 		line-height: normal;
 
 		&--active {
-			color: rgb(198 199 201 / 50%);
+			opacity: 0.5;
 		}
 	}
 

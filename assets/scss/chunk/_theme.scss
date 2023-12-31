@@ -1,0 +1,105 @@
+body.light-theme {
+	color: var(--martinique-color);
+
+	.wrap {
+		background-color: var(--athens-gray-color);
+	}
+
+	.hero {
+		&__messenger-link {
+			background-color: var(--martinique-color);
+
+			&:hover {
+				background-color: var(--electric-violet-color);
+			}
+		}
+
+		&__icon {
+			fill: var(--athens-gray-color);
+		}
+
+		&__link {
+			color: var(--athens-gray-color);
+		}
+	}
+
+	.sidebar {
+		background-color: var(--athens-gray-color);
+
+		&__inner {
+			&::after {
+				right: 100%;
+				transform: translate(125%, 25%);
+			}
+		}
+
+		&__switch {
+			&:hover .sidebar__inner {
+				&::after {
+					right: 0;
+					transform: translate(-25%, 25%);
+				}
+			}
+		}
+
+		&__text--active {
+			color: var(--martinique-color);
+		}
+	}
+
+	.menu {
+		&__icon {
+			fill: var(--martinique-color);
+		}
+
+		&__item {
+			color: var(--martinique-color);
+		}
+	}
+
+	.tabs {
+		&__header-item {
+			color: rgb(44 49 79 / 50%);
+			background-color: var(--silver-sand-color);
+
+			&:hover {
+				box-shadow: 0 0 25px 0 rgb(133 65 250 / 25%);
+				color: var(--athens-gray-color);
+				background: var(--electric-violet-color);
+			}
+
+			&.active {
+				box-shadow: 0 0 25px 0 rgb(133 65 250 / 25%);
+				color: var(--athens-gray-color);
+				background: var(--electric-violet-color);
+			}
+		}
+
+		&__card {
+			border: 2px solid var(--silver-sand-color);
+			background-color: var(--silver-sand-color);
+		}
+	}
+
+	.education {
+		&__stage {
+			&::after {
+				border-left: 2px solid rgb(44 49 79 / 50%);
+			}
+		}
+
+		&__text {
+			color: var(--martinique-color);
+		}
+	}
+
+	.swiper {
+		&__card {
+			background-color: var(--silver-sand-color);
+		}
+
+		&-btn {
+			background-color: rgb(44 49 79 / 30%);
+		}
+	}
+}
