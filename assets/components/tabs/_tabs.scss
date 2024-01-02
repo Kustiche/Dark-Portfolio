@@ -47,15 +47,31 @@
 				color: var(--athens-gray-color);
 				background: var(--electric-violet-color);
 			}
+
+			@media screen and (max-width: 1024px) {
+				@include adaptive-font(15, 13);
+			}
+
+			@media screen and (max-width: 768px) {
+				text-align: center;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 5px;
 		}
 	}
 
 	&__content {
-		@include adaptive-font(70, 40);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-top: 40px;
+
+		@media screen and (max-width: 768px) {
+			margin-top: 15px;
+		}
 	}
 
 	&__content-item {
@@ -64,6 +80,10 @@
 		align-items: center;
 		justify-content: center;
 		gap: 20px;
+
+		@media screen and (max-width: 768px) {
+			gap: 10px;
+		}
 	}
 
 	&__card {
@@ -72,13 +92,25 @@
 		align-items: center;
 		border: 2px solid var(--martinique-color);
 		border-radius: 12px;
-		padding: 20px 35px 15px;
+		padding: 20px 30px 15px;
+		width: 100%;
+		max-width: 150px;
+
+		@media screen and (max-width: 768px) {
+			padding: 15px 15px 10px;
+			max-width: 110px;
+		}
 	}
 
 	&__icon {
 		margin-bottom: 15px;
 		width: 85px;
 		height: 85px;
+
+		@media screen and (max-width: 768px) {
+			width: 75px;
+			height: 75px;
+		}
 	}
 
 	&__name {
@@ -86,5 +118,6 @@
 		font-weight: 600;
 		font-size: 11px;
 		line-height: normal;
+		text-align: center;
 	}
 }

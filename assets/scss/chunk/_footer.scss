@@ -4,6 +4,10 @@
 	&__title {
 		margin: 0;
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__inner {
@@ -12,6 +16,12 @@
 		justify-content: space-between;
 		width: 100%;
 		max-width: 450px;
+		gap: 20px;
+
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
 	}
 
 	&__contact {
@@ -27,6 +37,11 @@
 
 		&:hover {
 			opacity: 1;
+		}
+
+		@media screen and (max-width: 425px) {
+			width: 65px;
+			height: 65px;
 		}
 	}
 

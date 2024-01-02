@@ -2,6 +2,10 @@
 	&__title {
 		margin: 0;
 		margin-bottom: 25px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__text {
@@ -9,5 +13,13 @@
 		max-width: 700px;
 		font-size: 15px;
 		line-height: 26px;
+
+		@media screen and (max-width: 1024px) {
+			@include adaptive-font(15, 10);
+		}
+
+		@media screen and (max-width: 768px) {
+			line-height: 18px;
+		}
 	}
 }

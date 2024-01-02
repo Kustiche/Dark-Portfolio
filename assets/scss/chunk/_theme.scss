@@ -31,6 +31,20 @@ body.light-theme {
 				right: 100%;
 				transform: translate(125%, 25%);
 			}
+
+			@media screen and (max-width: 1475px) {
+				&::after {
+					transform: translate(120%, 25%);
+				}
+			}
+
+			@media screen and (max-width: 375px) {
+				&::after {
+					left: 0;
+					top: 0;
+					transform: translate(20%, 25%);
+				}
+			}
 		}
 
 		&__switch {
@@ -38,6 +52,15 @@ body.light-theme {
 				&::after {
 					right: 0;
 					transform: translate(-25%, 25%);
+				}
+			}
+
+			@media screen and (max-width: 375px) {
+				&:hover .sidebar__inner {
+					&::after {
+						top: 0;
+						transform: translate(20%, 20%);
+					}
 				}
 			}
 		}
