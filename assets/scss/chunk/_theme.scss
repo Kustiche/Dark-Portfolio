@@ -47,26 +47,16 @@ body.light-theme {
 			}
 		}
 
-		&__switch {
-			&:hover .sidebar__inner {
-				&::after {
-					right: 0;
-					transform: translate(-25%, 25%);
-				}
-			}
-
-			@media screen and (max-width: 375px) {
-				&:hover .sidebar__inner {
-					&::after {
-						top: 0;
-						transform: translate(20%, 20%);
-					}
-				}
-			}
-		}
-
 		&__text--active {
 			color: var(--martinique-color);
+		}
+
+		&__switch {
+			&:hover .sidebar__text {
+				&--active {
+					color: var(--martinique-color);
+				}
+			}
 		}
 	}
 
