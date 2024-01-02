@@ -111,9 +111,17 @@ img {
 }
 
 div {
-	transition: all 0.4s;
+	transition: background-color 0.4s;
 }
 
 p {
-	transition: all 0.4s;
+	transition: color 0.4s;
+}
+
+h2 {
+	transition: color 0.4s;
+}
+
+span {
+	transition: color 0.4s;
 }
