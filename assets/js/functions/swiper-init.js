@@ -1,12 +1,10 @@
 import Swiper from 'swiper/bundle';
 
-const screenWidth = window.screen.width;
-
 const swiper = new Swiper('.swiper', {
 	speed: 300,
 	loop: true,
-	spaceBetween: screenWidth <= 1024 ? 8 : 20,
-	slidesPerView: screenWidth <= 1024 ? 2 : 3,
+	spaceBetween: 8,
+	slidesPerView: 2,
 	centeredSlides: true,
 
 	// autoplay: {
@@ -17,6 +15,12 @@ const swiper = new Swiper('.swiper', {
 		nextEl: '.swiper-btn--next',
 		prevEl: '.swiper-btn--prev',
 	},
-
 	effect: 'slide',
+
+	breakpoints: {
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+	},
 });
