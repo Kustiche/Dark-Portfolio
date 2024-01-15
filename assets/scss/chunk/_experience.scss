@@ -6,10 +6,16 @@
 
 	&__inner {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
+		overflow-y: auto;
 		width: 100%;
 		max-height: 400px;
 		gap: 20px;
+
+		@media screen and (max-width: 768px) {
+			gap: 10px;
+		}
 	}
 
 	&__card {
@@ -19,8 +25,14 @@
 		border: 2px solid var(--martinique-color);
 		border-radius: 12px;
 		padding: 10px;
-		width: 150px;
-		height: 150px;
+		width: 100%;
+		min-height: 150px;
+		max-width: 150px;
+
+		@media screen and (max-width: 768px) {
+			min-height: 140px;
+			max-width: 140px;
+		}
 	}
 
 	&__icon {
@@ -29,6 +41,12 @@
 		min-height: 85px;
 		max-height: 85px;
 		fill: var(--electric-violet-color);
+
+		@media screen and (max-width: 768px) {
+			width: 75px;
+			min-height: 75px;
+			max-height: 75px;
+		}
 	}
 
 	&__heading {
