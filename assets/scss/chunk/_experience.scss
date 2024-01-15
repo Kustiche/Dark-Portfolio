@@ -1,0 +1,42 @@
+.experience {
+	&__title {
+		margin: 0;
+		margin-bottom: 25px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		max-height: 400px;
+		gap: 20px;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 2px solid var(--martinique-color);
+		border-radius: 12px;
+		padding: 10px;
+		width: 150px;
+		height: 150px;
+	}
+
+	&__icon {
+		margin-bottom: 10px;
+		width: 85px;
+		min-height: 85px;
+		max-height: 85px;
+		fill: var(--electric-violet-color);
+	}
+
+	&__heading {
+		margin: 0;
+		font-family: OpenSans-SemiBold, sans-serif;
+		font-weight: 600;
+		font-size: 11px;
+		line-height: normal;
+		text-align: center;
+	}
+}
