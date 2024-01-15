@@ -96,14 +96,8 @@ body.light-theme {
 	}
 
 	.experience {
-		&__stage {
-			&::after {
-				border-left: 2px solid rgb(44 49 79 / 50%);
-			}
-		}
-
-		&__text {
-			color: var(--martinique-color);
+		&__card {
+			background-color: rgb(198 199 201 / 50%);
 		}
 	}
 
