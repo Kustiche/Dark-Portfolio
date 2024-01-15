@@ -18,6 +18,7 @@ body {
 	font-weight: 400;
 	color: var(--athens-gray-color);
 	background-color: var(--vulcan-color);
+	transition: background-color 0.4s;
 
 	&.lock {
 		overflow: hidden;
