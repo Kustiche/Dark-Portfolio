@@ -10,15 +10,15 @@
 // @import "libs/animate";
 
 // * Подключение стилей swiper-слайдера
-@import 'libs/swiper-bundle.min';
-@import '../components/slider/slider';
+// @import 'libs/swiper-bundle.min';
+// @import '../components/slider/slider';
 
 // * Main styles
 @import 'chunk/hero';
-@import 'chunk/about';
+@import 'chunk/works';
 @import '../components/tabs/tabs';
 @import 'chunk/skills';
-@import 'chunk/works';
 @import 'chunk/experience';
+@import 'chunk/about';
 @import 'chunk/footer';
 @import 'chunk/theme';
