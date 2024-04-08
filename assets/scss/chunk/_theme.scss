@@ -6,27 +6,7 @@ body.light-theme {
 		background-color: var(--athens-gray-color);
 	}
 
-	.hero {
-		&__messenger-link {
-			background-color: var(--martinique-color);
-
-			&:hover {
-				background-color: var(--electric-violet-color);
-			}
-		}
-
-		&__icon {
-			fill: var(--athens-gray-color);
-		}
-
-		&__link {
-			color: var(--athens-gray-color);
-		}
-	}
-
-	.sidebar {
-		background-color: var(--athens-gray-color);
-
+	.header {
 		&__inner {
 			&::after {
 				right: 100%;
@@ -53,7 +33,7 @@ body.light-theme {
 		}
 
 		&__switch {
-			&:hover .sidebar__text {
+			&:hover .header__text {
 				&--active {
 					color: var(--martinique-color);
 				}
@@ -62,12 +42,24 @@ body.light-theme {
 	}
 
 	.menu {
-		&__icon {
-			fill: var(--martinique-color);
+		background-color: var(--athens-gray-color);
+	}
+
+	.hero {
+		&__messenger-link {
+			background-color: var(--martinique-color);
+
+			&:hover {
+				background-color: var(--electric-violet-color);
+			}
 		}
 
-		&__item {
-			color: var(--martinique-color);
+		&__icon {
+			fill: var(--athens-gray-color);
+		}
+
+		&__link {
+			color: var(--athens-gray-color);
 		}
 	}
 
@@ -98,16 +90,6 @@ body.light-theme {
 	.experience {
 		&__card {
 			background-color: rgb(198 199 201 / 50%);
-		}
-	}
-
-	.swiper {
-		&__card {
-			background-color: var(--silver-sand-color);
-		}
-
-		&-btn {
-			background-color: rgb(44 49 79 / 30%);
 		}
 	}
 }

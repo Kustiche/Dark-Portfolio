@@ -1,16 +1,16 @@
-const themeBtn = document.querySelector('.sidebar__switch');
-const namesTheme = document.querySelectorAll('.sidebar__text');
+const themeBtn = document.querySelector('.header__switch');
+const namesTheme = document.querySelectorAll('.header__text');
 
 function changeTheme() {
 	document.body.classList.toggle('light-theme');
 
 	namesTheme.forEach((name) => {
-		const isNameActive = name.className === 'sidebar__text sidebar__text--active';
+		const isNameActive = name.className === 'header__text header__text--active';
 
 		if (isNameActive) {
-			name.classList.remove('sidebar__text--active');
+			name.classList.remove('header__text--active');
 		} else {
-			name.classList.add('sidebar__text--active');
+			name.classList.add('header__text--active');
 		}
 	});
 }
