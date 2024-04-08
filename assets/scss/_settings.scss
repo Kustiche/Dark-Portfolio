@@ -23,6 +23,10 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
+
+	@media screen and (min-width: 1350px) {
+		font-size: 18px;
+	}
 }
 
 .site-container {
@@ -40,39 +44,6 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 	max-width: $container-width + px;
-
-	@media screen and (max-width: 1700px) {
-		max-width: 940px;
-	}
-
-	@media screen and (max-width: 1080px) {
-		margin-right: 10px;
-	}
-
-	@media screen and (max-width: 1024px) {
-		margin-right: auto;
-		max-width: 690px;
-	}
-
-	@media screen and (max-width: 840px) {
-		margin-right: 0;
-	}
-
-	@media screen and (max-width: 768px) {
-		margin-right: auto;
-		max-width: 385px;
-	}
-
-	@media screen and (max-width: 535px) {
-		margin-right: 30px;
-		padding: 0;
-		max-width: 295px;
-	}
-
-	@media screen and (max-width: 425px) {
-		margin-right: 5px;
-		max-width: 260px;
-	}
 }
 
 img {

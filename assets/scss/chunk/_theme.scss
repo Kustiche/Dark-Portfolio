@@ -13,17 +13,9 @@ body.light-theme {
 				transform: translate(125%, 25%);
 			}
 
-			@media screen and (max-width: 1475px) {
+			@media screen and (max-width: 576px) {
 				&::after {
 					transform: translate(120%, 25%);
-				}
-			}
-
-			@media screen and (max-width: 375px) {
-				&::after {
-					left: 0;
-					top: 0;
-					transform: translate(20%, 25%);
 				}
 			}
 		}
@@ -38,6 +30,14 @@ body.light-theme {
 					color: var(--martinique-color);
 				}
 			}
+		}
+	}
+
+	.burger {
+		&__line,
+		&::before,
+		&::after {
+			background-color: var(--martinique-color);
 		}
 	}
 
