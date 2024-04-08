@@ -9,13 +9,13 @@
 	}
 
 	&__text {
+		@include adaptive-font(16, 14);
 		margin: 0;
 		max-width: 700px;
-		font-size: 15px;
 		line-height: 26px;
 
-		@media screen and (max-width: 1024px) {
-			@include adaptive-font(15, 10);
+		@media screen and (min-width: 1350px) {
+			font-size: 16px;
 		}
 
 		@media screen and (max-width: 768px) {

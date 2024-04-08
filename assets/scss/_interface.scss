@@ -16,10 +16,10 @@
 }
 
 .title {
-	font-size: 17px;
+	@include adaptive-font(18, 16);
 	line-height: normal;
 
-	@media screen and (max-width: 1024px) {
-		@include adaptive-font(17, 13);
+	@media screen and (min-width: 1350px) {
+		font-size: 18px;
 	}
 }

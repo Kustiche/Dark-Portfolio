@@ -14,10 +14,10 @@
 
 		&-item {
 			border-radius: 12px;
-			padding: 10px 70px;
+			padding: 10px 50px;
 			font-family: OpenSans-SemiBold, sans-serif;
 			font-weight: 600;
-			font-size: 15px;
+			font-size: 16px;
 			line-height: normal;
 			color: rgb(198 199 201 / 50%);
 			background-color: var(--martinique-color);
@@ -30,26 +30,10 @@
 				background: var(--electric-violet-color);
 			}
 
-			&:nth-child(2) {
-				padding: 10px 40px;
-			}
-
-			&:nth-child(3) {
-				padding: 10px 40px;
-			}
-
-			&:nth-child(4) {
-				padding: 10px 60px;
-			}
-
 			&.active {
 				box-shadow: 0 0 25px 0 rgb(133 65 250 / 25%);
 				color: var(--athens-gray-color);
 				background: var(--electric-violet-color);
-			}
-
-			@media screen and (max-width: 1024px) {
-				@include adaptive-font(15, 13);
 			}
 
 			@media screen and (max-width: 768px) {
@@ -116,7 +100,7 @@
 	&__name {
 		font-family: OpenSans-SemiBold, sans-serif;
 		font-weight: 600;
-		font-size: 11px;
+		font-size: 14px;
 		line-height: normal;
 		text-align: center;
 	}
