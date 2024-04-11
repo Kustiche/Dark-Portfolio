@@ -18,6 +18,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-radius: 12px;
 		width: 100%;
 		min-height: 100%;
 		background-color: rgb(44 49 79 / 80%);
@@ -36,7 +37,6 @@
 		padding: 10px;
 		width: 100%;
 		min-height: 100%;
-		max-width: 300px;
 		background-color: var(--martinique-color);
 		opacity: 0;
 		transition: all 0.4s;
@@ -56,7 +56,13 @@
 		margin: 0;
 	}
 
+	&__inner-img {
+		height: 100%;
+		background-color: var(--martinique-color);
+	}
+
 	&__img {
+		border-radius: 12px;
 		width: 100%;
 		height: auto;
 	}
@@ -90,12 +96,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: flex-start;
 		border-radius: 0 10px 10px 0;
 		padding: 10px;
 		width: 100%;
 		min-height: 100%;
-		max-width: 200px;
 		background-color: var(--martinique-color);
 		opacity: 0;
 		transition: all 0.4s;
@@ -106,6 +111,7 @@
 	&__link-git {
 		border-radius: 50%;
 		padding: 10px;
+		line-height: 0;
 
 		&::before,
 		&::after {
@@ -124,11 +130,13 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-width: 300px;
+		width: 100%;
+		max-width: 600px;
 		transition: all 0.4s;
 
 		&:hover {
 			padding-top: 40px;
+			max-width: 300px;
 		}
 
 		&:hover .works__content {
@@ -142,7 +150,7 @@
 		}
 
 		&:hover .works__links {
-			right: -200px;
+			right: -300px;
 			opacity: 1;
 			pointer-events: inherit;
 		}
