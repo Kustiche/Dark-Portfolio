@@ -63,6 +63,24 @@ body.light-theme {
 		}
 	}
 
+	.works {
+		&__inner {
+			background-color: rgb(198 199 201 / 80%);
+		}
+
+		&__content {
+			background-color: var(--silver-sand-color);
+		}
+
+		&__stack {
+			background-color: var(--silver-sand-color);
+		}
+
+		&__links {
+			background-color: var(--silver-sand-color);
+		}
+	}
+
 	.tabs {
 		&__header-item {
 			color: rgb(44 49 79 / 50%);
