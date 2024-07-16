@@ -190,6 +190,12 @@
 		transition: max-width 0.4s, padding 0.4s;
 		cursor: pointer;
 
+		&:hover {
+			.works__inner {
+				opacity: 0.8;
+			}
+		}
+
 		&.active {
 			padding-top: 40px;
 			max-width: 300px;
